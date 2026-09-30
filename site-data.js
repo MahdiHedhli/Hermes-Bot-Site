@@ -8,10 +8,12 @@ features:[
 ["◍","Voice input & read aloud","Dictate messages and have replies read aloud from the mobile experience."],
 ["⌕","Bot Chat search","Search across Bot Chats available on your phone to quickly find prior context."],
 ["◷","Scheduled jobs","View and edit scheduled jobs with continuity back to your Hermes instance."],
-["◇","Default model selection","Choose the default model used by a bot directly from mobile."]
+["◇","Default model selection","Choose the default model used by a bot directly from mobile."],
+["▤","Tool output","See the tool output Hermes produces alongside the conversation."],
+["⧉","Copy conversation & code","Copy a whole conversation or an individual code block from your phone."]
 ],
-now:["Secure pairing","Multiple Hermes instances","Bot Chat","Guarded sending","Offline reading","Voice input and read aloud","Search across phone Bot Chats","Scheduled jobs with editing and continuity","Default-model selection"],
-next:["Tool output polish","Approvals and decisions","Copy conversation and code","Expanded mobile controls"],
+now:["Secure pairing","Multiple Hermes instances","Bot Chat","Guarded sending","Offline reading","Tool output","Copy conversation and code","Voice input and read aloud","Search across phone Bot Chats","Scheduled jobs with editing and continuity","Bot default-model selection"],
+next:["Approvals and decisions","Expanded mobile controls"],
 parity:["All Desktop chat tabs","Full cross-surface approvals","Screen viewing","Checkpoint restore and regenerate","Chat branching","Two-way Hermes voice","Instant change feed"],
 future:[
 ["Tabs","All Desktop chat tabs","Hermes needs a server-side record of each bot's tabs and a supported way to open them remotely."],
@@ -23,7 +25,7 @@ future:[
 ],
 faq:[
 ["What do I need to use Hermes Bot Mobile?","A compatible Hermes Agent installation, the HMP Gateway plugin, Tailscale running on the Hermes host and your phone, and the Hermes Bot Mobile beta."],
-["Can I join the iOS beta now?","The TestFlight invitation is reserved and waiting for Apple review. The button is marked pending until Apple accepts external testers."],
+["Can I join the iOS beta now?","Yes. The external TestFlight beta is available through the iOS button on this site. You will need your own Hermes host, HMP Gateway, and Tailscale."],
 ["Can I join the Android beta now?","The Google Play testing URL is reserved, but no testing release is published yet. The button remains pending until the release accepts testers."],
 ["Does my Hermes instance need to be exposed to the internet?","No. The beta is designed for a private Tailscale connection. HMP runs alongside your Hermes deployment."],
 ["Why do I pair my phone and then approve bots separately?","They establish different trust. Pairing connects this device to the Hermes instance. Bot authorization controls which profiles and Bot Chats the device may access."],
