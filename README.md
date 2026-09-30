@@ -18,6 +18,13 @@ Do not copy private implementation details, credentials, tailnet addresses, test
 
 The iOS and Android buttons are intentionally disabled until public beta URLs are available.
 
+## Website screenshots
+
+`assets/screenshots/android-demo-00-pairing.png` through
+`android-demo-04-model.png` are synthetic, offline Android demo captures from
+the mobile app's beta listing. They contain no live host or conversation data.
+Label them as demo previews when using them on the website.
+
 ## Next automation
 
 Add a workflow in the private app repository that publishes a sanitized feature-data artifact or opens a PR here when `docs/FEATURES.md` changes. HMP should similarly publish version/compatibility metadata once releases exist.
