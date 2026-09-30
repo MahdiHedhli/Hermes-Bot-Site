@@ -1,28 +1,55 @@
 window.HERMES_SITE_DATA={
+timeline:[
+{id:"bot-mode",status:"released",badge:"Released",date:"2026-08-31",dateLabel:"Aug 31, 2026",
+title:"Hermes Agent v0.21.0 — Bot Mode",
+summary:"Bot Mode arrives built into Hermes Desktop.",
+links:[["Release notes","https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.31"]]},
+{id:"features",status:"live",badge:"iOS beta live",date:"2026-09-30",dateLabel:"Sep 30, 2026",
+title:"Hermes Bot Mobile beta",
+summary:"The external iOS TestFlight beta is available now. The Android beta is being prepared.",
+featuresLabel:"Available in the beta",
 features:[
-["◉","Secure pairing","Pair your phone to your Hermes instance with a short-lived QR flow and explicit confirmation."],
-["↔","Multiple Hermes instances","Pair more than one deployment and switch explicitly between them."],
-["◌","Bot Chat","Open the same Bot Chat Hermes Desktop shows and continue the conversation from your phone."],
-["↑","Guarded sending","Messages are protected against stale context and duplicate delivery when mobile connectivity changes."],
-["▣","Offline reading","Keep recently loaded Bot Chats readable when your phone loses its connection."],
-["◍","Voice input & read aloud","Dictate messages and have replies read aloud from the mobile experience."],
-["⌕","Bot Chat search","Search across Bot Chats available on your phone to quickly find prior context."],
-["◷","Scheduled jobs","View and edit scheduled jobs with continuity back to your Hermes instance."],
-["◇","Default model selection","Choose the default model used by a bot directly from mobile."],
-["▤","Tool output","See the tool output Hermes produces alongside the conversation."],
-["⧉","Copy conversation & code","Copy a whole conversation or an individual code block from your phone."]
-],
-roadmap:[
-["NEXT MILESTONE","Approvals and questions","Review Hermes requests and answer approvals and questions from your phone. Planned; not yet available in the beta."],
-["BETA REFINEMENT","Reliability and polish","Improve long-chat navigation and recovery on unreliable mobile connections, guided by tester feedback."]
-],
-future:[
-["Tabs","All Desktop chat tabs","Hermes needs a server-side record of each bot's tabs and a supported way to open them remotely."],
-["Approvals","Full cross-surface approvals","Hermes needs approval and question events exposed consistently to session chat."],
-["Screen","Watch the bot's screen","Hermes needs screen streaming exposed through the API server with Desktop-equivalent access control."],
-["History","Restore and branch chats","Hermes needs supported rewind and branch endpoints that preserve the original conversation."],
-["Realtime","Instant updates","Hermes needs a change feed so mobile can move beyond polling."],
-["Voice","Full two-way Hermes voice","Hermes needs voice and speech endpoints that use the bot's configured voices."]
+"Secure pairing and bot access",
+"Multiple Hermes instances",
+"Bot Chat with tool output",
+"Guarded sending and saved-draft recovery",
+"Encrypted offline reading",
+"Copy messages, conversations and code",
+"Voice input and read aloud",
+"Search across Bot Chats on your phone",
+"Scheduled jobs: create, edit, pause, with delivery and continuity",
+"Bot default-model selection for new sessions",
+"Guided setup",
+"Light and dark themes, larger text"],
+links:[["Join the iOS TestFlight","https://testflight.apple.com/join/xpqhr1Ab"]]},
+{id:"oct4",status:"target",badge:"Target update",date:"2026-10-04",dateLabel:"Oct 4, 2026",
+title:"Additional features and fixes",
+summary:"Planned beta update, subject to testing and store review.",
+featuresLabel:"Planned work",
+features:[
+"Long-chat navigation and keyboard-follow fixes",
+"Pairing and access refinements that keep requests tied to the Hermes instance you chose",
+"Send, delivery and reconnect reliability polish"],
+inDevLabel:"In development",
+inDev:["Approvals and questions — undergoing compatibility testing"]},
+{id:"one-gateway",status:"upstream",badge:"Depends on upstream",date:"",dateLabel:"Q4 2026 / Q1 2027",
+title:"One Gateway, then Desktop parity",
+summary:"Our planning window for One Gateway support and Desktop parity on mobile, subject to upstream availability and testing. This is our target window, not an announced Nous Research release date.",
+featuresLabel:"Desktop parity goals",
+features:[
+"All chat tabs, plus new tabs",
+"Shared approvals and questions",
+"Group chats",
+"Attachments and generated files",
+"Screen viewing",
+"Checkpoint restore and chat branching",
+"Mid-chat model changes and bot lifecycle controls",
+"Full two-way Hermes voice",
+"Instant event updates"],
+links:[
+["Follow One Gateway","https://github.com/NousResearch/hermes-agent/pull/106742","Upstream PR: One gateway owns every local session"],
+["Entry-point plan","https://gist.github.com/unsupportedpastels/765f9d551ce88ee01630c18367763e75"],
+["Mobile API observations","https://gist.github.com/MahdiHedhli/c8d01a96bdfc794edaf7c3e1f4cb1502"]]}
 ],
 faq:[
 ["What do I need to use Hermes Bot Mobile?","A compatible Hermes Agent installation, the HMP Gateway plugin, Tailscale running on the Hermes host and your phone, and the Hermes Bot Mobile beta."],
@@ -33,5 +60,5 @@ faq:[
 ["Can I connect more than one Hermes installation?","Yes. Pair multiple Hermes instances and switch between them. The active instance is always explicit."],
 ["What happens when my connection drops?","Loaded conversations remain readable offline. Guarded sending is deliberately conservative so an old instruction does not unexpectedly execute after the conversation has progressed."],
 ["Are the screenshots real user data?","No. The screenshots on this site are synthetic demo previews and contain no live host, account, or chat data."],
-["Why are some features listed as future?","Some Desktop-parity features need additional Hermes APIs or events. We track those separately rather than pretending the mobile client can safely recreate Hermes behavior."]
+["What comes after the beta?","Some Desktop-parity features need additional Hermes APIs or events. We track those separately rather than pretending the mobile client can safely recreate Hermes behavior."]
 ]};
