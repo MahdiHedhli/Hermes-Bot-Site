@@ -12,9 +12,10 @@ features:[
 ["▤","Tool output","See the tool output Hermes produces alongside the conversation."],
 ["⧉","Copy conversation & code","Copy a whole conversation or an individual code block from your phone."]
 ],
-now:["Secure pairing","Multiple Hermes instances","Bot Chat","Guarded sending","Offline reading","Tool output","Copy conversation and code","Voice input and read aloud","Search across phone Bot Chats","Scheduled jobs with editing and continuity","Bot default-model selection"],
-next:["Approvals and decisions","Expanded mobile controls"],
-parity:["All Desktop chat tabs","Full cross-surface approvals","Screen viewing","Checkpoint restore and regenerate","Chat branching","Two-way Hermes voice","Instant change feed"],
+roadmap:[
+["NEXT MILESTONE","Approvals and questions","Review Hermes requests and answer approvals and questions from your phone. Planned; not yet available in the beta."],
+["BETA REFINEMENT","Reliability and polish","Improve long-chat navigation and recovery on unreliable mobile connections, guided by tester feedback."]
+],
 future:[
 ["Tabs","All Desktop chat tabs","Hermes needs a server-side record of each bot's tabs and a supported way to open them remotely."],
 ["Approvals","Full cross-surface approvals","Hermes needs approval and question events exposed consistently to session chat."],
