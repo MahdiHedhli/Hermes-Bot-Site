@@ -54,7 +54,7 @@ links:[
 faq:[
 ["What do I need to use Hermes Bot Mobile?","A compatible Hermes Agent installation, the HMP Gateway plugin, Tailscale running on the Hermes host and your phone, and the Hermes Bot Mobile beta."],
 ["Can I join the iOS beta now?","Yes. The external TestFlight beta is available through the iOS button on this site. You will need your own Hermes host, HMP Gateway, and Tailscale."],
-["Can I join the Android beta now?","The Google Play testing URL is reserved, but no testing release is published yet. The button remains pending until the release accepts testers."],
+["Can I join the Android beta now?","Google Play enrollment is not available yet. Join the Android beta waitlist on this site and we’ll email you when testing opens or a setup step is needed. Signup does not enroll you in Google Play or install the app."],
 ["Does my Hermes instance need to be exposed to the internet?","No. The beta is designed for a private Tailscale connection. HMP runs alongside your Hermes deployment."],
 ["Why do I pair my phone and then approve bots separately?","They establish different trust. Pairing connects this device to the Hermes instance. Bot authorization controls which profiles and Bot Chats the device may access."],
 ["Can I connect more than one Hermes installation?","Yes. Pair multiple Hermes instances and switch between them. The active instance is always explicit."],
